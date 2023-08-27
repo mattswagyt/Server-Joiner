@@ -32,6 +32,12 @@ class ServerJoiner {
       if (this.joinCount < 200) {
         this.joinServer(target);
       } else {
+        // If attempting to join more than 100 servers, prevent the Nitro prompt
+        const joinButton = target.querySelector(".join-23GAYs");
+        if (joinButton) {
+          joinButton.click();
+        }
+
         BdApi.showToast("You have reached the maximum join limit.", {
           type: "error",
           namespace: "server-joiner-plugin"
@@ -57,5 +63,4 @@ class ServerJoiner {
   }
 }
 
-const serverJoiner = new ServerJoiner();
-export default serverJoiner;
+module.exports = ServerJoiner;
