@@ -5,4 +5,4 @@ If this doesn't work, contact me ASAP and I will try my best to fix it.
 
 Update Log
 
-8/27/23 - Fixed bugs & issues, plugin should work now.
+9/5/23 - Added more coding to the code, fixing some of the errors.
